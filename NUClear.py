@@ -15,7 +15,7 @@ domain list folder.
 
 
 # Put the path to the folder containing your lists of domains
-listsDir = "C:\\Users\\mjere\\Desktop\\Intrusion\\PythonINT\\List of Domains\\"
+listsDir = "PATH TO FOLDER CONTAINING LISTS"
 
 # Chromedriver options -- Comment out the options if you dont want it headless.
 options = Options()
@@ -24,7 +24,7 @@ options.add_argument('--disable-gpu')
 options.add_argument('log-level=3')  # Only output fatal errors
 
 # Chrome webdriver for Selenium
-browser = webdriver.Chrome(r"C:\Users\mjere\Desktop\Intrusion\PythonINT\SeleniumDrivers\chromedriver_win32\chromedriver.exe",
+browser = webdriver.Chrome(r"PATH TO CHROME DRIVER ->chromedriver.exe",
                            options=options)
 
 
