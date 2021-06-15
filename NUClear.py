@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import glob
 import random
-import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -26,14 +25,6 @@ options.add_argument('log-level=3')  # Only output fatal errors
 # Chrome webdriver for Selenium
 browser = webdriver.Chrome(r"PATH TO CHROME DRIVER ->chromedriver.exe",
                            options=options)
-
-
-# Generates random time before loading next page
-def rando():
-
-    randoTimer = random.randint(2, 10)
-    print("{---} Wait Time is : ", randoTimer, " seconds {---}")
-    return randoTimer
 
 
 # Enumerates all domain lists in specified directory, and randomly selects one
@@ -71,7 +62,7 @@ while True:
         # Selenium code to open browser with the listed domain
         page = browser.get("https://" + domain)
 
-        time.sleep(rando())
+        browser.set_page_load_timeout(2) # Chromedriver will wait 2 seconds for page to load and then move on.
 
     except Exception as e:
 
