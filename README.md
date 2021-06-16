@@ -17,3 +17,8 @@ point the "browser" variable to the location of the driver:
 Point the "listsDir" variable to the folder containing your various lists.
 (ex. listsDir = "C:\\Users\\bob\\Desktop\\folder\\") *escape the backslashes
 
+Exceptions will be raised when timeouts occur because of killed traffic. The script will continue on.
+
+If using on a RPI and a sessionid failure exception is getting raised, clear the cache of the pi:
+
+sudo apt-get clean
