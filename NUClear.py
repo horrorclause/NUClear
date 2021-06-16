@@ -52,7 +52,7 @@ while True:
         # Pulls random domain from randomly selected list
         file = open(fileDir(), "r")
         pulledFile = file.readlines()
-        splitDirectory = file.name.split("\\")
+        splitDirectory = file.name.split("\\") # For Linux or RPI change to "/"
         domain = pulledFile[random.randint(0, len(pulledFile)-1)].strip()
         listName = splitDirectory[-1]
 
@@ -62,7 +62,7 @@ while True:
         # Selenium code to open browser with the listed domain
         page = browser.get("https://" + domain)
 
-        browser.set_page_load_timeout(2) # Chromedriver will wait 2 seconds for page to load and then move on.
+        browser.set_page_load_timeout(8) # Chromedriver will wait 8 seconds for page to load and then move on.
 
     except Exception as e:
 
