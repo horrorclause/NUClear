@@ -64,9 +64,9 @@ while True:
 
         browser.set_page_load_timeout(2) # Chromedriver will wait 8 seconds for page to load and then move on.
 
-    except Exception as e:
+    except Exception as e:  # An execption will be raised when the site is killed
 
-        print("Exception raised")
+        #print("Exception raised") 
         #print(e)
         pass
 
