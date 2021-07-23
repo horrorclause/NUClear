@@ -36,6 +36,8 @@ Ensure that chromedriver for the Chromium browser is installed:
 "$sudo apt install chromium-chromedriver"
 
 The "browser" variable should be set as such for headless:
+
+
 browser = webdriver.Chrome(r"/usr/lib/chromium-browser/chromedriver", options=options)
 
 
