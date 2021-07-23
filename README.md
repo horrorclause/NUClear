@@ -25,6 +25,8 @@ sudo apt-get clean
 
 
 **### For the Raspyberry PI 3/4**
+
+
 The Selenium module needs to be installed for Python 3. Python 3 Should be installed by default on the RPi 3/4 so install selenium like so:
 
 "$pip3 install selenium"
