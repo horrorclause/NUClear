@@ -1,6 +1,7 @@
 # NUClear
 
 Written in python3
+
 Allows you to cycle through lists of domains at random in Chrome using selenium and chromedriver
 
 *Requires the selenium module for python3*
@@ -26,6 +27,7 @@ sudo apt-get clean
 
 **### For the Raspyberry PI 3/4**
 
+---> splitDirectory = file.name.split("\\") # For Linux or RPi change to "/" <----
 
 The Selenium module needs to be installed for Python 3. Python 3 Should be installed by default on the RPi 3/4 so install selenium like so:
 
