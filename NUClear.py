@@ -62,7 +62,7 @@ while True:
         # Selenium code to open browser with the listed domain
         page = browser.get("https://" + domain)
 
-        browser.set_page_load_timeout(2) # Chromedriver will wait 8 seconds for page to load and then move on.
+        browser.set_page_load_timeout(2) # Chromedriver will wait n seconds for page to load and then move on.
 
     except Exception as e:  # An execption will be raised when the site is killed
 
