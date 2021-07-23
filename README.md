@@ -22,3 +22,15 @@ Exceptions will be raised when timeouts occur because of killed traffic. The scr
 If using on a RPI and a sessionid failure exception is getting raised, clear the cache of the pi:
 
 sudo apt-get clean
+
+
+**### For the Raspyberry PI 3/4**
+The Selenium module needs to be installed for Python 3. Python 3 Should be installed by default on the RPi 3/4 so install selenium like so:
+
+"$pip3 install selenium"
+
+Ensure that chromedriver for the Chromium browser is installed:
+
+"$sudo apt install chromium-chromedriver"
+
+
