@@ -56,8 +56,8 @@ while True:
         domain = pulledFile[random.randint(0, len(pulledFile)-1)].strip()
         listName = splitDirectory[-1]
 
-        print("[+] -- The domain is: "+domain)
-        print("[+] -- Acquired from list: "+listName)
+        print("[+] Domain: "+domain)
+        print(">>--|> List: "+listName+"\n")
 
         # Selenium code to open browser with the listed domain
         page = browser.get("https://" + domain)
