@@ -78,3 +78,5 @@ $pip3 install selenium
 
 chmod 755 /usr/bin/chromedriver
 
+Un-comment Line 22 to enable the "no-sandbox" option 
+
