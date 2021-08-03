@@ -18,6 +18,8 @@ listsDir = "PATH TO FOLDER CONTAINING LISTS"
 
 # Chromedriver options -- Comment out the options if you dont want it headless.
 options = Options()
+#Un-comment (no-sandbox) for FedoraOS and Fedor Server
+#options.add_argument('--no-sandbox')  
 options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 options.add_argument('log-level=3')  # Only output fatal errors
