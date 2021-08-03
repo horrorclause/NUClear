@@ -67,3 +67,14 @@ For the Raspyberry PI 2/3/4 & Linux & Mac
 **sudo apt-get clean**
 
 
+For FedoraOS & Fedora Server
+---------------------------------------------------------------------------------------------------------------------------
+
+$dnf upgrade
+
+$dnf install chromium
+
+$pip3 install selenium
+
+chmod 755 /usr/bin/chromedriver
+
