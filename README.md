@@ -2,6 +2,8 @@
 
 Written in python3
 
+Run with "python3 NUClear.py"
+
 Allows you to cycle through lists of domains at random in Chrome using selenium and chromedriver
 ---------------------------------------------------------------------------------------------------------------------------
 
