@@ -1,24 +1,22 @@
-# NUClear
+# NUClear #
 
 Written in python3
 
 Run with "python3 NUClear.py"
 
-Allows you to cycle through lists of domains at random in Chrome using selenium and chromedriver
----------------------------------------------------------------------------------------------------------------------------
-
-***Requires the selenium module for python3***
----------------------------------------------------------------------------------------------------------------------------
+### Allows you to cycle through lists of domains at random in Chrome using selenium and chromedriver ###
 
 
+## Requires the selenium module for python3 ##
 
->> Make sure you check which version of Chrome you are using and download the correct chromedriver <<
+
+Make sure you check which version of Chrome you are using and download the correct chromedriver <<
 
 Download the chromedriver: https://chromedriver.chromium.org/downloads
 
 
-Windows
----------------------------------------------------------------------------------------------------------------------------
+## Windows ##
+
 
 [+] Point the "browser" variable to the location of the driver:
 
@@ -26,14 +24,11 @@ Windows
 **(ex. browser = webdriver.Chrome(r"C:\Users\bob\Desktop\Folder\chromedriver_win32\chromedriver.exe", options=options))**
 
 
-
-
 [+] Point the "listsDir" variable to the folder containing your various lists.
 
 
 **(ex. listsDir = "C:\\\Users\\\bob\\\Desktop\\\folder\\\\") escape the backslashes for use in Windows**
 
----------------------------------------------------------------------------------------------------------------------------
 
 _Exceptions will be raised when timeouts occur because of killed traffic. The script will continue on._
 
